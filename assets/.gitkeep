@@ -1,0 +1,15 @@
+# 为什么这个文件必须存在
+#
+# flutter_scene 的构建钩子（hook/build.dart → buildScenes/buildMaterials）会把
+# `assets/` 声明为构建依赖目录（`discoveryDependencyDirectory`）。若 `assets/`
+# 不存在，它会回退到**最近的已存在祖先** —— 也就是项目根目录。
+#
+# 一旦依赖目录变成项目根，hooks_runner 计算依赖哈希时会对整棵目录树做递归
+# `list()`，而它的 `TracingDirectory.wrapLink` 遇到**任何符号链接**都会抛
+# `UnimplementedError`（见 hooks_runner 的 utils/file.dart 与 tracing_file_system.dart）。
+# macOS 构建里 SwiftPM / Xcode 会在 build/ 下产生框架符号链接，于是构建直接崩成
+# "Oops; flutter has exited unexpectedly: UnimplementedError" +
+# "PhaseScriptExecution failed with a nonzero exit code"。
+#
+# 保留 `assets/`（哪怕空着）可把依赖收窄到一个干净目录，构建即恢复正常。
+# 排查命令：find . -type l -not -path "./.git/*" | while read l; do [ -e "$l" ] || echo "DANGLING: $l"; done

@@ -1,0 +1,673 @@
+音频验收：127.0.0.1:7008
+
+【1/6】引擎、烘焙与装配
+   boot 合计 1096ms（音频烘焙阶段 6ms） · 烘焙 2209ms/28 个资产 · arm 1249ms×1
+   engine ready=true sources=28 · 装配好的层 4/4 · voices=10 · out L/R=0.028531847521662712/0.07041390985250473
+  ✓ 音频引擎已初始化
+  ✓ 已起播
+  ✓ 烘焙完成且没有失败  —— assets=28 failures=0
+  ✓ 四层环境音全部装配完成  —— preparedLayers=4
+  ✓ 烘焙不在启动的同步路径上（那一阶段应当接近 0）  —— 6ms
+  ✓ 引擎没有报告错误
+
+【2/6】真的在出声 + 声部预算
+   引擎时钟 +1439ms · 活跃声部 9 · 输出 L/R 0.028109030798077583/0.03311552107334137
+  ✓ 引擎时钟在推进（音频设备真的在跑）  —— 180024 → 181463
+  ✓ 左右声道都有实测输出（不是哑的）  —— L+R=0.0612
+  ✓ 声部数在预算内（河/风各只占当面档位，不是每层全档常驻）  —— voices=9
+
+【3/6】分层严格跟随天气（"不该响的绝不出声"）
+   clear   target 河=0.048 雨=0.000 风=0.111 夜=0.000  |  applied 河=0.024 雨=0.000 风=0.050 夜=0.000  | 距河 29.7m 急缓 0.30
+  ✓ clear：雨层必须完全静音  —— target=0.000 applied=0.000 playing=false
+  ✓ clear：夜层必须完全静音  —— target=0.000 applied=0.000
+  ✓ clear：河层始终可有声（河一直在那里）  —— target=0.048
+  ✓ clear：风层始终留一点底噪  —— target=0.111
+   cloudy  target 河=0.048 雨=0.000 风=0.119 夜=0.000  |  applied 河=0.024 雨=0.000 风=0.050 夜=0.000  | 距河 29.7m 急缓 0.30
+  ✓ cloudy：雨层必须完全静音  —— target=0.000 applied=0.000 playing=false
+  ✓ cloudy：夜层必须完全静音  —— target=0.000 applied=0.000
+  ✓ cloudy：河层始终可有声（河一直在那里）  —— target=0.048
+  ✓ cloudy：风层始终留一点底噪  —— target=0.119
+   rain    target 河=0.048 雨=0.261 风=0.111 夜=0.000  |  applied 河=0.024 雨=0.044 风=0.050 夜=0.000  | 距河 29.7m 急缓 0.30
+  ✓ rain：雨层应当出声  —— target=0.261 applied=0.044 playing=true
+  ✓ rain：夜层必须完全静音  —— target=0.000 applied=0.000
+  ✓ rain：河层始终可有声（河一直在那里）  —— target=0.048
+  ✓ rain：风层始终留一点底噪  —— target=0.111
+   night   target 河=0.043 雨=0.000 风=0.095 夜=0.220  |  applied 河=0.022 雨=0.000 风=0.048 夜=0.116  | 距河 29.7m 急缓 0.30
+  ✓ night：雨层必须完全静音  —— target=0.000 applied=0.000 playing=false
+  ✓ night：夜层应当出声  —— target=0.220 applied=0.116
+  ✓ night：河层始终可有声（河一直在那里）  —— target=0.043
+  ✓ night：风层始终留一点底噪  —— target=0.095
+  ✓ 四档天气下雨层从没在非雨天出过声
+
+【4/6】切换是连续淡入淡出，不是突切
+   雨层音量 0 → 0.261（33 个采样点，单步最大跳变 0.032）
+  ✓ 切入雨天时雨层音量连续爬升（没有一步到位）  —— max=0.261 maxStep=0.032 monotone=true
+     0.000 0.004 0.018 0.027 0.034 0.038 0.070 0.086 0.114 0.122 0.122 0.125 0.157 0.177 0.205 0.214 0.223 0.234 0.234 0.242 0.242 0.242 0.253 0.253 0.253 0.253 0.261 0.261 0.261 0.261 0.261 0.261 0.261
+   切回晴天：雨层 level=0 applied=0 playing=false activeVariants=0
+  ✓ 切回晴天后雨层真的停掉了（淡出并归还声部）
+
+【5/6】事件音的三重闸门（"晴天的滴滴答答"）
+   8s 内水花：播放 5 声（0.63 声/秒），被闸门拦下 19 声 · 事件音总览 {"splash":84,"ui":12,"pickup":12,"step_grass":13,"fanfare":1}
+  ✓ 水花播放速率被闸门压住（旧版实测 2.95 声/秒 = 雨声听感）  —— 0.63 声/秒
+  ✓ 闸门确实在拦（不是恰好没有事件）  —— dropped +19
+   按住 W 4s：脚步音 10 声
+  ✓ 角色移动会触发出脚步声（玩法事件音通道接通）  —— 10 声
+
+【6/6】响度阶梯与空间衰减（"别像瀑布"）
+     (24,0) 距离 9.0m target 0.177 out 0.0628
+     (30,0) 距离 3.8m target 0.261 out 0.1188
+     (0,0) 距离 29.7m target 0.048 out 0.0428
+     (-40,0) 距离 67.0m target 0.020 out 0.0156
+     (70,0) 距离 34.2m target 0.055 out 0.0281
+     (-90,0) 距离 97.1m target 0.013 out 0.0225
+   距离 3.8m → 97.1m ：target 0.261 → 0.013（r=-0.81）
+   4m:0.261  9m:0.177  30m:0.048  34m:0.055  67m:0.020  97m:0.013
+  ✓ 河声随距离单调变轻（空间衰减真的接在音量上）  —— r=-0.81
+  ✓ 近距离与远距离的差距足够明显（不是恒定音量）  —— 3.8m→0.261 vs 97.1m→0.013
+   全静音前 L+R=0.0271 → 后 0.0234
+  ✗ 静音全部环境音后实测输出确实掉了（层音量真的在控制输出）  —— 0.0271 → 0.0234
+   响度标尺：河 layer target=0.013 × 环境总线 0.60 × master 0.90 = 单声部 0.0072（上一版同距离是 0.805 且**不含**距离/急缓因子）
+
+【附加】启动与输入响应
+   启动各阶段合计 1096ms（音频只占 6ms，其余是程序化地形/草/植被） · 注入按键到角色开始移动 148ms
+  ✓ 按键到角色移动的延迟很短（输入没有被音频初始化挡住）  —— 148ms
+   3s 内以 ~10Hz 读 state：25 次应答 / 0 次超时 · 帧推进 99
+  ✓ 高频读 state 不会把主线程冻住（帧回调不再跟混音线程抢音频锁）  —— 25 应答 / 0 超时 / +99 帧
+  ✓ 启动各阶段耗时都在预算内（没有任何一段长时间阻塞主线程）  —— {"staticResources":342,"sky":70,"terrainWater":129,"aquaticFlora":36,"aquaticFauna":7,"grass":325,"flora":146,"player":35,"audioBake":6}
+
+✗ 1 项未通过（共 37 项）
+   ✗ 静音全部环境音后实测输出确实掉了（层音量真的在控制输出） —— 0.0271 → 0.0234
+
+{
+  "checks": [
+    {
+      "name": "音频引擎已初始化",
+      "ok": true
+    },
+    {
+      "name": "已起播",
+      "ok": true
+    },
+    {
+      "name": "烘焙完成且没有失败",
+      "ok": true,
+      "detail": "assets=28 failures=0"
+    },
+    {
+      "name": "四层环境音全部装配完成",
+      "ok": true,
+      "detail": "preparedLayers=4"
+    },
+    {
+      "name": "烘焙不在启动的同步路径上（那一阶段应当接近 0）",
+      "ok": true,
+      "detail": "6ms"
+    },
+    {
+      "name": "引擎没有报告错误",
+      "ok": true
+    },
+    {
+      "name": "引擎时钟在推进（音频设备真的在跑）",
+      "ok": true,
+      "detail": "180024 → 181463"
+    },
+    {
+      "name": "左右声道都有实测输出（不是哑的）",
+      "ok": true,
+      "detail": "L+R=0.0612"
+    },
+    {
+      "name": "声部数在预算内（河/风各只占当面档位，不是每层全档常驻）",
+      "ok": true,
+      "detail": "voices=9"
+    },
+    {
+      "name": "clear：雨层必须完全静音",
+      "ok": true,
+      "detail": "target=0.000 applied=0.000 playing=false"
+    },
+    {
+      "name": "clear：夜层必须完全静音",
+      "ok": true,
+      "detail": "target=0.000 applied=0.000"
+    },
+    {
+      "name": "clear：河层始终可有声（河一直在那里）",
+      "ok": true,
+      "detail": "target=0.048"
+    },
+    {
+      "name": "clear：风层始终留一点底噪",
+      "ok": true,
+      "detail": "target=0.111"
+    },
+    {
+      "name": "cloudy：雨层必须完全静音",
+      "ok": true,
+      "detail": "target=0.000 applied=0.000 playing=false"
+    },
+    {
+      "name": "cloudy：夜层必须完全静音",
+      "ok": true,
+      "detail": "target=0.000 applied=0.000"
+    },
+    {
+      "name": "cloudy：河层始终可有声（河一直在那里）",
+      "ok": true,
+      "detail": "target=0.048"
+    },
+    {
+      "name": "cloudy：风层始终留一点底噪",
+      "ok": true,
+      "detail": "target=0.119"
+    },
+    {
+      "name": "rain：雨层应当出声",
+      "ok": true,
+      "detail": "target=0.261 applied=0.044 playing=true"
+    },
+    {
+      "name": "rain：夜层必须完全静音",
+      "ok": true,
+      "detail": "target=0.000 applied=0.000"
+    },
+    {
+      "name": "rain：河层始终可有声（河一直在那里）",
+      "ok": true,
+      "detail": "target=0.048"
+    },
+    {
+      "name": "rain：风层始终留一点底噪",
+      "ok": true,
+      "detail": "target=0.111"
+    },
+    {
+      "name": "night：雨层必须完全静音",
+      "ok": true,
+      "detail": "target=0.000 applied=0.000 playing=false"
+    },
+    {
+      "name": "night：夜层应当出声",
+      "ok": true,
+      "detail": "target=0.220 applied=0.116"
+    },
+    {
+      "name": "night：河层始终可有声（河一直在那里）",
+      "ok": true,
+      "detail": "target=0.043"
+    },
+    {
+      "name": "night：风层始终留一点底噪",
+      "ok": true,
+      "detail": "target=0.095"
+    },
+    {
+      "name": "四档天气下雨层从没在非雨天出过声",
+      "ok": true
+    },
+    {
+      "name": "切入雨天时雨层音量连续爬升（没有一步到位）",
+      "ok": true,
+      "detail": "max=0.261 maxStep=0.032 monotone=true"
+    },
+    {
+      "name": "切回晴天后雨层真的停掉了（淡出并归还声部）",
+      "ok": true
+    },
+    {
+      "name": "水花播放速率被闸门压住（旧版实测 2.95 声/秒 = 雨声听感）",
+      "ok": true,
+      "detail": "0.63 声/秒"
+    },
+    {
+      "name": "闸门确实在拦（不是恰好没有事件）",
+      "ok": true,
+      "detail": "dropped +19"
+    },
+    {
+      "name": "角色移动会触发出脚步声（玩法事件音通道接通）",
+      "ok": true,
+      "detail": "10 声"
+    },
+    {
+      "name": "河声随距离单调变轻（空间衰减真的接在音量上）",
+      "ok": true,
+      "detail": "r=-0.81"
+    },
+    {
+      "name": "近距离与远距离的差距足够明显（不是恒定音量）",
+      "ok": true,
+      "detail": "3.8m→0.261 vs 97.1m→0.013"
+    },
+    {
+      "name": "静音全部环境音后实测输出确实掉了（层音量真的在控制输出）",
+      "ok": false,
+      "detail": "0.0271 → 0.0234"
+    },
+    {
+      "name": "按键到角色移动的延迟很短（输入没有被音频初始化挡住）",
+      "ok": true,
+      "detail": "148ms"
+    },
+    {
+      "name": "高频读 state 不会把主线程冻住（帧回调不再跟混音线程抢音频锁）",
+      "ok": true,
+      "detail": "25 应答 / 0 超时 / +99 帧"
+    },
+    {
+      "name": "启动各阶段耗时都在预算内（没有任何一段长时间阻塞主线程）",
+      "ok": true,
+      "detail": "{\"staticResources\":342,\"sky\":70,\"terrainWater\":129,\"aquaticFlora\":36,\"aquaticFauna\":7,\"grass\":325,\"flora\":146,\"player\":35,\"audioBake\":6}"
+    }
+  ],
+  "samples": {
+    "weathers": [
+      {
+        "weather": "clear",
+        "targets": {
+          "river": 0.0479,
+          "rain": 0,
+          "wind": 0.1114,
+          "night": 0
+        },
+        "layers": {
+          "river": {
+            "prepared": true,
+            "loaded": 5,
+            "variants": 5,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.0479,
+            "applied": 0.0238,
+            "source": [
+              0,
+              0,
+              0
+            ],
+            "weight": [
+              0.945,
+              0.328
+            ],
+            "band": [
+              1,
+              2
+            ]
+          },
+          "rain": {
+            "prepared": true,
+            "loaded": 3,
+            "variants": 3,
+            "playing": false,
+            "muted": false,
+            "activeVariants": 0,
+            "level": 0,
+            "applied": 0,
+            "weight": [
+              1,
+              0
+            ],
+            "band": [
+              0,
+              1
+            ]
+          },
+          "wind": {
+            "prepared": true,
+            "loaded": 3,
+            "variants": 3,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.1114,
+            "applied": 0.0503,
+            "weight": [
+              0.844,
+              0.536
+            ],
+            "band": [
+              0,
+              1
+            ]
+          },
+          "night": {
+            "prepared": true,
+            "loaded": 1,
+            "variants": 1,
+            "playing": false,
+            "muted": false,
+            "activeVariants": 0,
+            "level": 0,
+            "applied": 0,
+            "weight": [
+              1,
+              0
+            ],
+            "band": [
+              0,
+              0
+            ]
+          }
+        },
+        "river": {
+          "intensity": 0.303,
+          "distance": 29.67,
+          "sectionSpeed": 0.272,
+          "sectionTurbulence": 0.188,
+          "playbackRate": 1.014,
+          "source": [
+            26.39,
+            -5.12,
+            -13.54
+          ]
+        }
+      },
+      {
+        "weather": "cloudy",
+        "targets": {
+          "river": 0.0479,
+          "rain": 0,
+          "wind": 0.1187,
+          "night": 0
+        },
+        "layers": {
+          "river": {
+            "prepared": true,
+            "loaded": 5,
+            "variants": 5,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.0479,
+            "applied": 0.0238,
+            "source": [
+              0,
+              0,
+              0
+            ],
+            "weight": [
+              0.945,
+              0.328
+            ],
+            "band": [
+              1,
+              2
+            ]
+          },
+          "rain": {
+            "prepared": true,
+            "loaded": 3,
+            "variants": 3,
+            "playing": false,
+            "muted": false,
+            "activeVariants": 0,
+            "level": 0,
+            "applied": 0,
+            "weight": [
+              1,
+              0
+            ],
+            "band": [
+              0,
+              1
+            ]
+          },
+          "wind": {
+            "prepared": true,
+            "loaded": 3,
+            "variants": 3,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.1136,
+            "applied": 0.0503,
+            "weight": [
+              0.822,
+              0.569
+            ],
+            "band": [
+              0,
+              1
+            ]
+          },
+          "night": {
+            "prepared": true,
+            "loaded": 1,
+            "variants": 1,
+            "playing": false,
+            "muted": false,
+            "activeVariants": 0,
+            "level": 0,
+            "applied": 0,
+            "weight": [
+              1,
+              0
+            ],
+            "band": [
+              0,
+              0
+            ]
+          }
+        },
+        "river": {
+          "intensity": 0.303,
+          "distance": 29.67,
+          "sectionSpeed": 0.272,
+          "sectionTurbulence": 0.188,
+          "playbackRate": 1.014,
+          "source": [
+            26.39,
+            -5.12,
+            -13.54
+          ]
+        }
+      },
+      {
+        "weather": "rain",
+        "targets": {
+          "river": 0.0479,
+          "rain": 0.2609,
+          "wind": 0.1106,
+          "night": 0
+        },
+        "layers": {
+          "river": {
+            "prepared": true,
+            "loaded": 5,
+            "variants": 5,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.0479,
+            "applied": 0.0238,
+            "source": [
+              0,
+              0,
+              0
+            ],
+            "weight": [
+              0.945,
+              0.328
+            ],
+            "band": [
+              1,
+              2
+            ]
+          },
+          "rain": {
+            "prepared": true,
+            "loaded": 3,
+            "variants": 3,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.109,
+            "applied": 0.0436,
+            "weight": [
+              0.672,
+              0.741
+            ],
+            "band": [
+              0,
+              1
+            ]
+          },
+          "wind": {
+            "prepared": true,
+            "loaded": 3,
+            "variants": 3,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.1152,
+            "applied": 0.0495,
+            "weight": [
+              0.606,
+              0.796
+            ],
+            "band": [
+              0,
+              1
+            ]
+          },
+          "night": {
+            "prepared": true,
+            "loaded": 1,
+            "variants": 1,
+            "playing": false,
+            "muted": false,
+            "activeVariants": 0,
+            "level": 0,
+            "applied": 0,
+            "weight": [
+              1,
+              0
+            ],
+            "band": [
+              0,
+              0
+            ]
+          }
+        },
+        "river": {
+          "intensity": 0.303,
+          "distance": 29.67,
+          "sectionSpeed": 0.272,
+          "sectionTurbulence": 0.188,
+          "playbackRate": 1.014,
+          "source": [
+            26.39,
+            -5.12,
+            -13.54
+          ]
+        }
+      },
+      {
+        "weather": "night",
+        "targets": {
+          "river": 0.0432,
+          "rain": 0,
+          "wind": 0.0947,
+          "night": 0.22
+        },
+        "layers": {
+          "river": {
+            "prepared": true,
+            "loaded": 5,
+            "variants": 5,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.0432,
+            "applied": 0.0225,
+            "source": [
+              0,
+              0,
+              0
+            ],
+            "weight": [
+              0.945,
+              0.328
+            ],
+            "band": [
+              1,
+              2
+            ]
+          },
+          "rain": {
+            "prepared": true,
+            "loaded": 3,
+            "variants": 3,
+            "playing": false,
+            "muted": false,
+            "activeVariants": 0,
+            "level": 0,
+            "applied": 0,
+            "weight": [
+              1,
+              0
+            ],
+            "band": [
+              0,
+              1
+            ]
+          },
+          "wind": {
+            "prepared": true,
+            "loaded": 3,
+            "variants": 3,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 2,
+            "level": 0.0947,
+            "applied": 0.0482,
+            "weight": [
+              0.93,
+              0.368
+            ],
+            "band": [
+              0,
+              1
+            ]
+          },
+          "night": {
+            "prepared": true,
+            "loaded": 1,
+            "variants": 1,
+            "playing": true,
+            "muted": false,
+            "activeVariants": 1,
+            "level": 0.2192,
+            "applied": 0.1161,
+            "weight": [
+              1,
+              0
+            ],
+            "band": [
+              0,
+              0
+            ]
+          }
+        },
+        "river": {
+          "intensity": 0.303,
+          "distance": 29.67,
+          "sectionSpeed": 0.272,
+          "sectionTurbulence": 0.188,
+          "playbackRate": 1.014,
+          "source": [
+            26.39,
+            -5.12,
+            -13.54
+          ]
+        }
+      }
+    ],
+    "loudness": [],
+    "touch": {
+      "latencyMs": 148,
+      "bootTotal": 1096
+    }
+  }
+}

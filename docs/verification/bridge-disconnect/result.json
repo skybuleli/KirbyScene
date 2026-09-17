@@ -1,0 +1,185 @@
+{
+  "disconnects": [
+    {
+      "receivedBytes": 4096,
+      "ping": {
+        "ok": true
+      }
+    },
+    {
+      "receivedBytes": 4096,
+      "ping": {
+        "ok": true
+      }
+    },
+    {
+      "receivedBytes": 4096,
+      "ping": {
+        "ok": true
+      }
+    }
+  ],
+  "samples": [
+    {
+      "seconds": 1.0081235410034424,
+      "frame": 421,
+      "delta": 21
+    },
+    {
+      "seconds": 2.0116896660038037,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 3.0195407080027508,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 4.0269530410005245,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 5.029828208003892,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 6.037721250002505,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 7.04274862499733,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 8.047537666003336,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 9.053561207998428,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 10.061676875004196,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 11.065826332996949,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 12.072107915999368,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 13.080301540991059,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 14.088479457990616,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 15.091823458002182,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 16.09519249999721,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 17.1021909580013,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 18.107514707997325,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 19.114394499993068,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 20.121478999993997,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 21.129491665997193,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 22.133898415995645,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 23.1385237499926,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 24.142529749995447,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 25.150065499998163,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 26.156166000000667,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 27.161587875001715,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 28.16890308300208,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 29.174468083001557,
+      "frame": 421,
+      "delta": 0
+    },
+    {
+      "seconds": 30.177194457995938,
+      "frame": 421,
+      "delta": 0
+    }
+  ],
+  "elapsed": 30.177213582996046,
+  "fps": 0.6958892987997033,
+  "continuous": false,
+  "unhandledErrors": [],
+  "timings": [
+    "flutter: [PERF] fps=0.8 frames=51 window=60.635s ui=28.91ms p95ui=87.18ms raster=4.26ms p95raster=17.93ms weather=clear",
+    "flutter: [PERF] fps=41.1 frames=84 window=2.018s ui=20.04ms p95ui=43.13ms raster=0.39ms p95raster=0.49ms weather=clear",
+    "flutter: [PERF] fps=41.3 frames=85 window=2.033s ui=20.55ms p95ui=44.50ms raster=0.36ms p95raster=0.55ms weather=clear",
+    "flutter: [PERF] fps=42.0 frames=90 window=2.117s ui=20.30ms p95ui=43.33ms raster=0.34ms p95raster=0.45ms weather=clear",
+    "flutter: [PERF] fps=42.4 frames=90 window=2.100s ui=20.12ms p95ui=43.49ms raster=0.34ms p95raster=0.48ms weather=clear"
+  ]
+}

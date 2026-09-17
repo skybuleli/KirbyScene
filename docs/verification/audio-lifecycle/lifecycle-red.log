@@ -1,0 +1,35 @@
+00:00 +0: loading /Users/liliang/KirbyScene/test/ambience_lifecycle_test.dart
+00:00 +0: 播放后重复装配保留句柄，静音后不留下孤立循环声部
+00:00 +0 -1: 播放后重复装配保留句柄，静音后不留下孤立循环声部 [E]
+  Expected: empty
+    Actual: Set:[1, 2]
+  清空句柄不等于停止引擎声部，重复装配不能丢失所有权
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/ambience_lifecycle_test.dart 73:5              main.<fn>
+  
+00:00 +0 -1: 并发装配合并为一次，未完成时不发布半成品
+00:00 +0 -2: 并发装配合并为一次，未完成时不发布半成品 [E]
+  Expected: <3>
+    Actual: <6>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/ambience_lifecycle_test.dart 85:5              main.<fn>
+  
+00:00 +0 -2: 装配中释放等待装配结束，不残留资源，可重新装配
+00:00 +0 -3: 装配中释放等待装配结束，不残留资源，可重新装配 [E]
+  Expected: false
+    Actual: <true>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/ambience_lifecycle_test.dart 98:5              main.<fn>
+  
+00:00 +0 -3: Some tests failed.
+
+Failing tests:
+  /Users/liliang/KirbyScene/test/ambience_lifecycle_test.dart: 并发装配合并为一次，未完成时不发布半成品
+  /Users/liliang/KirbyScene/test/ambience_lifecycle_test.dart: 播放后重复装配保留句柄，静音后不留下孤立循环声部
+  /Users/liliang/KirbyScene/test/ambience_lifecycle_test.dart: 装配中释放等待装配结束，不残留资源，可重新装配

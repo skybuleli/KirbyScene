@@ -1,0 +1,3822 @@
+{
+  "before": [
+    {
+      "phase": "静音前",
+      "frame": 11498,
+      "elapsed": 295.34323500001807,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.010556060820817947,
+        "outputRight": 0.010788297280669212,
+        "activeVoices": 6,
+        "engineTimeMs": 405722
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": true,
+          "muted": false,
+          "activeVariants": 2,
+          "level": 0.0134,
+          "applied": 0.006,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后1秒",
+      "frame": 11541,
+      "elapsed": 296.3265730000176,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.004362168256193399,
+        "outputRight": 0.005008462350815535,
+        "activeVoices": 6,
+        "engineTimeMs": 406743
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": true,
+          "muted": true,
+          "activeVariants": 2,
+          "level": 0.0023,
+          "applied": 0.001,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后2秒",
+      "frame": 11581,
+      "elapsed": 297.2599130000172,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.01128111220896244,
+        "outputRight": 0.011521016247570515,
+        "activeVoices": 4,
+        "engineTimeMs": 407765
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后3秒",
+      "frame": 11624,
+      "elapsed": 298.2765830000168,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.015714991837739944,
+        "outputRight": 0.01584642380475998,
+        "activeVoices": 4,
+        "engineTimeMs": 408810
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后4秒",
+      "frame": 11666,
+      "elapsed": 299.24325400001635,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.013083089143037796,
+        "outputRight": 0.014000649563968182,
+        "activeVoices": 4,
+        "engineTimeMs": 409832
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后5秒",
+      "frame": 11710,
+      "elapsed": 300.293257000016,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.013156221248209476,
+        "outputRight": 0.013440976850688457,
+        "activeVoices": 4,
+        "engineTimeMs": 410853
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后6秒",
+      "frame": 11753,
+      "elapsed": 301.3265930000156,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.01686994917690754,
+        "outputRight": 0.017120124772191048,
+        "activeVoices": 4,
+        "engineTimeMs": 411921
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后7秒",
+      "frame": 11791,
+      "elapsed": 302.19326900001516,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.011053308844566345,
+        "outputRight": 0.011805235408246517,
+        "activeVoices": 4,
+        "engineTimeMs": 412943
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后8秒",
+      "frame": 11831,
+      "elapsed": 303.1432770000148,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.006093802396208048,
+        "outputRight": 0.00657638581469655,
+        "activeVoices": 4,
+        "engineTimeMs": 413965
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后9秒",
+      "frame": 11869,
+      "elapsed": 304.05995200001445,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.005835016258060932,
+        "outputRight": 0.006438840180635452,
+        "activeVoices": 4,
+        "engineTimeMs": 414987
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后10秒",
+      "frame": 11906,
+      "elapsed": 304.90996300001405,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.012193982489407063,
+        "outputRight": 0.012754217721521854,
+        "activeVoices": 4,
+        "engineTimeMs": 416008
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后11秒",
+      "frame": 11946,
+      "elapsed": 305.8433060000136,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.022178340703248978,
+        "outputRight": 0.02193371020257473,
+        "activeVoices": 4,
+        "engineTimeMs": 417053
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后12秒",
+      "frame": 11984,
+      "elapsed": 306.7599810000133,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.00982357282191515,
+        "outputRight": 0.010151110589504242,
+        "activeVoices": 4,
+        "engineTimeMs": 418075
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后1秒",
+      "frame": 12028,
+      "elapsed": 307.79332100001284,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.014617559500038624,
+        "outputRight": 0.014235051348805428,
+        "activeVoices": 4,
+        "engineTimeMs": 419189
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.03,
+          "target": 0
+        },
+        "ui": {
+          "now": 0.027,
+          "target": 0
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后2秒",
+      "frame": 12070,
+      "elapsed": 308.7599930000124,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.013750730082392693,
+        "outputRight": 0.0135278245434165,
+        "activeVoices": 4,
+        "engineTimeMs": 420211
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.001,
+          "target": 0
+        },
+        "ui": {
+          "now": 0.001,
+          "target": 0
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后3秒",
+      "frame": 12111,
+      "elapsed": 309.710000000012,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.010852974839508533,
+        "outputRight": 0.010456535965204239,
+        "activeVoices": 4,
+        "engineTimeMs": 421279
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0,
+          "target": 0
+        },
+        "ui": {
+          "now": 0,
+          "target": 0
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后4秒",
+      "frame": 12151,
+      "elapsed": 310.64334100001156,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.006317712366580963,
+        "outputRight": 0.006566484924405813,
+        "activeVoices": 4,
+        "engineTimeMs": 422324
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0,
+          "target": 0
+        },
+        "ui": {
+          "now": 0,
+          "target": 0
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后5秒",
+      "frame": 12191,
+      "elapsed": 311.57668200001115,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.007951191626489162,
+        "outputRight": 0.008085723966360092,
+        "activeVoices": 4,
+        "engineTimeMs": 423369
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0,
+          "target": 0
+        },
+        "ui": {
+          "now": 0,
+          "target": 0
+        }
+      }
+    }
+  ],
+  "fixed": [
+    {
+      "phase": "静音前",
+      "frame": 289,
+      "elapsed": 7.216849999999989,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.0005363337113521993,
+        "outputRight": 0.00110691599547863,
+        "activeVoices": 2,
+        "engineTimeMs": 9357
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": true,
+          "muted": false,
+          "activeVariants": 2,
+          "level": 0.0134,
+          "applied": 0.006,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后1秒",
+      "frame": 329,
+      "elapsed": 8.150203999999992,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0.00011915909999515861,
+        "outputRight": 0.0002459264069329947,
+        "activeVoices": 2,
+        "engineTimeMs": 10448
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": true,
+          "muted": true,
+          "activeVariants": 2,
+          "level": 0.0023,
+          "applied": 0.001,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后2秒",
+      "frame": 366,
+      "elapsed": 9.000221000000003,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后3秒",
+      "frame": 406,
+      "elapsed": 9.933578000000013,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后4秒",
+      "frame": 446,
+      "elapsed": 10.866926000000019,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后5秒",
+      "frame": 486,
+      "elapsed": 11.800272000000032,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后6秒",
+      "frame": 526,
+      "elapsed": 12.733624000000038,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后7秒",
+      "frame": 566,
+      "elapsed": 13.666972000000046,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后8秒",
+      "frame": 605,
+      "elapsed": 14.583657000000056,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后9秒",
+      "frame": 644,
+      "elapsed": 15.517004000000068,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后10秒",
+      "frame": 681,
+      "elapsed": 16.40034700000008,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后11秒",
+      "frame": 720,
+      "elapsed": 17.333692000000095,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "环境层静音后12秒",
+      "frame": 759,
+      "elapsed": 18.250371000000122,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.9,
+          "target": 0.9
+        },
+        "ui": {
+          "now": 0.75,
+          "target": 0.75
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后1秒",
+      "frame": 801,
+      "elapsed": 19.217054000000147,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.038,
+          "target": 0
+        },
+        "ui": {
+          "now": 0.033,
+          "target": 0
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后2秒",
+      "frame": 841,
+      "elapsed": 20.150402000000167,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0.002,
+          "target": 0
+        },
+        "ui": {
+          "now": 0.001,
+          "target": 0
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后3秒",
+      "frame": 880,
+      "elapsed": 21.06708000000019,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0,
+          "target": 0
+        },
+        "ui": {
+          "now": 0,
+          "target": 0
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后4秒",
+      "frame": 920,
+      "elapsed": 22.000429000000214,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0,
+          "target": 0
+        },
+        "ui": {
+          "now": 0,
+          "target": 0
+        }
+      }
+    },
+    {
+      "phase": "事件总线静音后5秒",
+      "frame": 960,
+      "elapsed": 22.93377700000023,
+      "levels": {
+        "ok": true,
+        "outputLeft": 0,
+        "outputRight": 0,
+        "activeVoices": 0,
+        "engineTimeMs": 11447
+      },
+      "layers": {
+        "river": {
+          "prepared": true,
+          "loaded": 5,
+          "variants": 5,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "source": [
+            0,
+            0,
+            0
+          ],
+          "weight": [
+            0.834,
+            0.551
+          ],
+          "band": [
+            1,
+            2
+          ]
+        },
+        "rain": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "wind": {
+          "prepared": true,
+          "loaded": 3,
+          "variants": 3,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            0.844,
+            0.536
+          ],
+          "band": [
+            0,
+            1
+          ]
+        },
+        "night": {
+          "prepared": true,
+          "loaded": 1,
+          "variants": 1,
+          "playing": false,
+          "muted": true,
+          "activeVariants": 0,
+          "level": 0,
+          "applied": 0,
+          "weight": [
+            1,
+            0
+          ],
+          "band": [
+            0,
+            0
+          ]
+        }
+      },
+      "buses": {
+        "master": 0.9,
+        "ambience": {
+          "now": 0.6,
+          "target": 0.6
+        },
+        "sfx": {
+          "now": 0,
+          "target": 0
+        },
+        "ui": {
+          "now": 0,
+          "target": 0
+        }
+      }
+    }
+  ]
+}

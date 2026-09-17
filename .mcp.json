@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "kirby-scene": {
+      "command": "/Users/liliang/flutter/bin/dart",
+      "args": [
+        "/Users/liliang/KirbyScene/tool/kirby_mcp.dart"
+      ],
+      "env": {
+        "KIRBY_PROJECT_DIR": "/Users/liliang/KirbyScene"
+      }
+    }
+  }
+}

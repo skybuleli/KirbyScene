@@ -1,0 +1,195 @@
+00:00 +0: loading /Users/liliang/KirbyScene/test/grass_layout_test.dart
+00:00 +0: /Users/liliang/KirbyScene/test/ambience_lifecycle_test.dart: 普通静音路径会停止全部受管理声部
+00:00 +1: /Users/liliang/KirbyScene/test/ambience_lifecycle_test.dart: 播放后重复装配保留句柄，静音后不留下孤立循环声部
+00:00 +2: /Users/liliang/KirbyScene/test/ambience_lifecycle_test.dart: 并发装配合并为一次，未完成时不发布半成品
+00:00 +3: /Users/liliang/KirbyScene/test/ambience_lifecycle_test.dart: 装配中释放等待装配结束，不残留资源，可重新装配
+00:00 +4: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 密度场 densityAt 平缓近处密度显著大于 0（修复密度过低的根基）
+00:00 +5: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 密度场 densityAt 外沿密度衰减到接近 0（距离 LOD）
+00:00 +6: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 密度场 densityAt 陡坡上不长草
+00:00 +7: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 密度场 densityAt 外圈之外与内圈之内都是 0
+00:00 +8: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 距离补偿（加宽 / 矮化） 相机近处不加宽、远处加宽到上限
+00:00 +9: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 距离补偿（加宽 / 矮化） 加宽随相机距离单调不减
+00:00 +10: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 距离补偿（加宽 / 矮化） 矮化只看角色距离，和相机距离无关
+00:00 +11: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 距离补偿（加宽 / 矮化） 加宽基准是相机而非角色（低视角巨型叶片回归）
+00:00 +12: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 产量在预算内且远超 v1（4500）
+00:00 +13: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 产量在预算内且远超 v1（4500）
+00:00 +14: /Users/liliang/KirbyScene/test/bridge_test.dart: 游戏侧桥接（KirbyWorld implements BridgeTarget） 非法 JSON 被挡下，而不是抛异常
+00:00 +15: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +16: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +17: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +18: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +19: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +20: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +21: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +22: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +23: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +24: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +25: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +26: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +27: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +28: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +29: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +30: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +31: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +32: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +33: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +34: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +35: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +36: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 确定性：同参数两次采样结果一致
+00:00 +37: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 所有落点都在环带内、贴地合理
+00:00 +38: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 分层抖动消除空穴：预算覆盖范围内没有成片空盘
+00:01 +39: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 预算不足时优先保住近场（远景先被裁）
+00:01 +40: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 预算不足时优先保住近场（远景先被裁）
+00:01 +41: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 预算不足时优先保住近场（远景先被裁）
+00:01 +42: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 预算不足时优先保住近场（远景先被裁）
+00:01 +43: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 预算不足时优先保住近场（远景先被裁）
+00:01 +44: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 预算不足时优先保住近场（远景先被裁）
+00:01 +45: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 预算不足时优先保住近场（远景先被裁）
+00:01 +46: /Users/liliang/KirbyScene/test/river_sound_test.dart: 参数确实接进了音色 同 seed 同参数完全可复现，不同 seed 不同
+00:01 +47: /Users/liliang/KirbyScene/test/grass_layout_test.dart: 布局采样 sampleLayout 丛簇：邻近叶片间距显著小于平均间距
+00:01 +48: /Users/liliang/KirbyScene/test/river_sound_test.dart: 参数确实接进了音色 合成耗时可控（起播前一次性合成，不能卡住主线程）
+00:01 +49: /Users/liliang/KirbyScene/test/river_sound_test.dart: 水花声 有起音、有衰减，且长度正确
+00:01 +50: /Users/liliang/KirbyScene/test/river_sound_test.dart: 水花声 大鱼的水花更长（衰减更慢）
+00:01 +51: /Users/liliang/KirbyScene/test/river_sound_test.dart: 音色档（RiverSoundMix） 越急的河段落在越高的档（单调）
+00:01 +52: /Users/liliang/KirbyScene/test/river_sound_test.dart: 音色档（RiverSoundMix） 湍流对"有多急"的影响大于流速（白水才是听觉上的"急"）
+00:01 +53: /Users/liliang/KirbyScene/test/river_sound_test.dart: 音色档（RiverSoundMix） 等功率交叉淡化：权重平方和恒为 1（淡化过程中不塌音量）
+00:01 +54: /Users/liliang/KirbyScene/test/river_sound_test.dart: 音色档（RiverSoundMix） 档位切换连续 —— 旧档权重先降到 0 才换档（没台阶）
+00:01 +55: /Users/liliang/KirbyScene/test/river_sound_test.dart: 音色档（RiverSoundMix） 相邻两档真的换了音色，而且越高的档越"嘶"
+00:01 +56: /Users/liliang/KirbyScene/test/river_sound_test.dart: 音色档（RiverSoundMix） 速率只做细调：范围窄且单调（音色已承担主要表达）
+00:01 +57: /Users/liliang/KirbyScene/test/river_sound_test.dart: 音色档（RiverSoundMix） 档位合成参数：深潭无白水、急滩拉满，且单调
+00:01 +58: /Users/liliang/KirbyScene/test/river_sound_test.dart: 音色档（RiverSoundMix） 整组档位烘焙耗时可控（起播前一次性算完，不能卡住主线程）
+00:01 +59: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 档位交叉淡化（bandBlend） 等功率：权重平方和恒为 1（淡化中点不塌音量）
+00:01 +60: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 档位交叉淡化（bandBlend） 边界处只有一档在响，且整体位置单调上升
+00:01 +61: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 档位交叉淡化（bandBlend） 换档是连续的：任一档的权重随强度平滑变化（没有台阶 = 没有"咔"）
+00:02 +62: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 档位交叉淡化（bandBlend） 单档配方也能用（夜层）
+00:02 +63: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 该听到什么（AmbienceMix）—— "晴天不响雨声"的判据 雨量为 0 时雨层目标恒为 0（枚举所有晴天/多云/夜晚组合）
+00:02 +64: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 该听到什么（AmbienceMix）—— "晴天不响雨声"的判据 雨量 > 0 时雨层出声，且音量随雨势单调上升
+00:02 +65: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 该听到什么（AmbienceMix）—— "晴天不响雨声"的判据 河流：距离越远越轻，且平缓的河明显比急滩轻
+00:02 +66: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 该听到什么（AmbienceMix）—— "晴天不响雨声"的判据 掩蔽：下雨掩掉风、且大雨里虫子不叫（自然融合，不是各响各的）
+00:02 +67: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 该听到什么（AmbienceMix）—— "晴天不响雨声"的判据 夜层只在有夜色时出声；风层无风时也留一点底噪
+00:02 +68: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量包络（LayerLevel / BusMix） 淡入淡出是连续的：单帧变化远小于全程，且不会越位
+00:02 +69: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量包络（LayerLevel / BusMix） 淡出到静音后 isSilent 为真（可以用来决定"到底要不要占用声部"）
+00:02 +70: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量包络（LayerLevel / BusMix） 总线系数 = master × 总线，且总线各自可调、互不影响
+00:02 +71: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量包络（LayerLevel / BusMix） 环境音总线的默认值明显低于音效（"河流太响"的混音阶梯）
+00:02 +72: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量包络（LayerLevel / BusMix） 淡出必须真正落到 0（指数逼近永远到不了 0，得靠收尾吸附）
+00:02 +73: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量包络（LayerLevel / BusMix） 非零目标不会被吸附（吸附只该发生在收尾）
+00:02 +74: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量下发判据（shouldSend）—— "晴天还挂着雨声"的判据 归零必须发一次（旧的绝对阈值会把它漏掉）
+00:02 +75: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量下发判据（shouldSend）—— "晴天还挂着雨声"的判据 已经发过 0 就不再重复发（否则每帧都重开一次淡变）
+00:02 +76: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 音量下发判据（shouldSend）—— "晴天还挂着雨声"的判据 没变就不发（省的是音频锁，不只是 CPU）
+00:02 +77: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河道几何 中心线在世界原点之外、草场之内（不会切掉玩法区）
+00:02 +78: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河道几何 中心线在世界原点之外、草场之内（不会切掉玩法区）
+00:02 +79: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河道几何 中心线在世界原点之外、草场之内（不会切掉玩法区）
+00:02 +80: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河道几何 中心线在世界原点之外、草场之内（不会切掉玩法区）
+00:02 +81: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河道几何 中心线在世界原点之外、草场之内（不会切掉玩法区）
+00:02 +82: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 声部归还判据（shouldRelease）—— "切回晴天雨层还在播"的判据 只有两档的层：交叉淡化的两档就是全部档位（旧判据在这里恒为假）
+00:02 +83: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河道几何 河床坡降单调下降（水流方向自洽）
+00:02 +84: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 一次性音效的闸门（SfxPlayer.admit）—— "晴天的滴滴答答"的判据 未装载一律不放（并会被计入 dropped）
+00:02 +85: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 一次性音效的闸门（SfxPlayer.admit）—— "晴天的滴滴答答"的判据 未装载一律不放（并会被计入 dropped）
+00:02 +86: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河道几何 到中心线的距离随横向偏移单调增加
+00:02 +87: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 一次性音效的闸门（SfxPlayer.admit）—— "晴天的滴滴答答"的判据 水花有并不可忽略的最小间隔 —— 这是"每秒约 3 声"那个 bug 的回归护栏
+00:02 +88: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河谷雕刻 水面横向范围有界（是河不是湖）
+00:02 +89: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河谷雕刻 水面横向范围有界（是河不是湖）
+00:02 +90: /Users/liliang/KirbyScene/test/river_terrain_test.dart: 河谷雕刻 水面横向范围有界（是河不是湖）
+00:02 +91: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 雨 / 风 / 夜三条循环的首尾都是连续的
+00:02 +92: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 雨 / 风 / 夜三条循环的首尾都是连续的
+00:02 +93: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 雨 / 风 / 夜三条循环的首尾都是连续的
+00:02 +94: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 雨 / 风 / 夜三条循环的首尾都是连续的
+00:02 +95: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 雨 / 风 / 夜三条循环的首尾都是连续的
+00:02 +96: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 雨 / 风 / 夜三条循环的首尾都是连续的
+00:02 +97: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 雨：雨势越大越往下沉（低频体量上升），且不是静音
+00:02 +98: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 雨不是"稀疏的水滴"：颗粒密度远高于人耳能分辨单次事件的速率
+00:02 +99: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 环境音配方的无缝循环（雨 / 风 / 夜） 风：阵性来自包络，不是恒定噪声（幅度的起伏必须明显）
+00:02 +100: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 烘焙任务目录 覆盖全部环境音层与全部一次性音效，且资源名不重复
+00:02 +101: /Users/liliang/KirbyScene/test/audio_mix_test.dart: 烘焙任务目录 runBakeJob 是纯的：同一任务两次得到完全一样的波形
+00:02 +102: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 readState 穿透两层拿到状态
+00:02 +103: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 readState 穿透两层拿到状态
+00:02 +104: /Users/liliang/KirbyScene/test/audio_mix_test.dart: WAV 编码（雨/风/夜也要能被引擎读） 头字段自洽，样本数正确
+00:02 +105: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 sendCommand 往返并保留业务结果
+00:02 +106: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 业务失败以 ok:false 返回，而不是抛异常
+00:02 +107: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 captureScreenshot 拿到与 App 侧一致的 PNG 字节
+00:02 +108: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 pngSize 能从真实 PNG 解出宽高
+00:02 +109: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 pumpFrames 等到帧计数前进
+00:03 +110: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 并发请求不会串台（FIFO 配对）
+00:03 +111: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 isOpen / describe 反映连接状态
+00:03 +112: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +113: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +114: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +115: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +116: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +117: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +118: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +119: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +120: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +121: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +122: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +123: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +124: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +125: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +126: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +127: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +128: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +129: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +130: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +131: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +132: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +133: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +134: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +135: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +136: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +137: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +138: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +139: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:03 +140: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +141: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +142: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +143: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +144: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +145: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +146: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +147: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +148: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +149: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +150: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +151: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:04 +152: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +153: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +154: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +155: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +156: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +157: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +158: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +159: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +160: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +161: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +162: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +163: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +164: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +165: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +166: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +167: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +168: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +169: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +170: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +171: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +172: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +173: /Users/liliang/KirbyScene/test/native_link_test.dart: macOS 传输层对通 连不上不存在的端口时给出可读错误
+00:05 +174: /Users/liliang/KirbyScene/test/water_waves_test.dart: (setUpAll)
+00:05 +174: /Users/liliang/KirbyScene/test/water_waves_test.dart: 网格拓扑 顶点数 / 三角形数符合 rows×cols 带状网格，索引都在范围内
+00:05 +175: /Users/liliang/KirbyScene/test/water_waves_test.dart: 网格拓扑 顶点预算落在 1.5k–2.5k，且每 3 帧一次更新足够轻
+00:05 +176: /Users/liliang/KirbyScene/test/water_waves_test.dart: 位移与水位 所有顶点 y 落在 flow.waterYAt(z) 附近，且岸边不高于岸线
+00:05 +177: /Users/liliang/KirbyScene/test/water_waves_test.dart: 位移与水位 时间前进后顶点位置不同 —— 水面确实在动（核心需求）
+00:05 +178: /Users/liliang/KirbyScene/test/water_waves_test.dart: 动画与流场绑定 流速快的水域相邻两帧位移变化量大于流速慢的水域
+00:05 +179: /Users/liliang/KirbyScene/test/water_waves_test.dart: 动画与流场绑定 边框顶点（最外列）振幅明显小于河心
+00:05 +180: /Users/liliang/KirbyScene/test/water_waves_test.dart: 动画与流场绑定 边框顶点（最外列）振幅明显小于河心
+00:05 +181: /Users/liliang/KirbyScene/test/water_waves_test.dart: 动画与流场绑定 边框顶点（最外列）振幅明显小于河心
+00:05 +182: /Users/liliang/KirbyScene/test/water_waves_test.dart: 动画与流场绑定 边框顶点（最外列）振幅明显小于河心
+00:05 +183: /Users/liliang/KirbyScene/test/water_waves_test.dart: 动画与流场绑定 边框顶点（最外列）振幅明显小于河心
+00:05 +184: /Users/liliang/KirbyScene/test/water_waves_test.dart: 法线 法线是单位向量，且以 +Y 为主（否则光照下读不出波纹）
+00:05 +185: /Users/liliang/KirbyScene/test/water_waves_test.dart: 点源涟漪 addRipple 后该点位移立刻变大，随后随时间衰减
+00:05 +186: /Users/liliang/KirbyScene/test/water_waves_test.dart: 点源涟漪 同一位置附近重复触发会合并，不会无限堆积
+00:05 +187: /Users/liliang/KirbyScene/test/water_waves_test.dart: 点源涟漪 涟漪总数有上限
+00:05 +188: /Users/liliang/KirbyScene/test/water_waves_test.dart: 点源涟漪 过期的涟漪会被回收
+00:05 +189: /Users/liliang/KirbyScene/test/water_waves_test.dart: 泡沫 湍流高的位置泡沫亮度高于湍流低的位置
+00:05 +190: /Users/liliang/KirbyScene/test/water_waves_test.dart: 泡沫 顺流泡沫条纹随时间滚动（顶点色在变）
+00:05 +191: /Users/liliang/KirbyScene/test/water_waves_test.dart: (tearDownAll)
+00:05 +191: All tests passed!

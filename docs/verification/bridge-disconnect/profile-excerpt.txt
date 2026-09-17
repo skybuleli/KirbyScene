@@ -1,0 +1,11 @@
+Launching lib/main.dart on macOS in profile mode...
+✓ Built build/macos/Build/Products/Profile/kirby_scene.app (80.9MB)
+Failed to foreground app; open returned 1
+flutter: [PERF] fps=0.8 frames=51 window=60.635s ui=28.91ms p95ui=87.18ms raster=4.26ms p95raster=17.93ms weather=clear
+flutter: [PERF] fps=41.1 frames=84 window=2.018s ui=20.04ms p95ui=43.13ms raster=0.39ms p95raster=0.49ms weather=clear
+flutter: [PERF] fps=41.3 frames=85 window=2.033s ui=20.55ms p95ui=44.50ms raster=0.36ms p95raster=0.55ms weather=clear
+flutter: [PERF] fps=42.0 frames=90 window=2.117s ui=20.30ms p95ui=43.33ms raster=0.34ms p95raster=0.45ms weather=clear
+flutter: [PERF] fps=42.4 frames=90 window=2.100s ui=20.12ms p95ui=43.49ms raster=0.34ms p95raster=0.48ms weather=clear
+flutter: [PERF] fps=0.5 frames=25 window=47.251s ui=26.86ms p95ui=51.94ms raster=1.84ms p95raster=15.50ms weather=clear
+flutter: [PERF] fps=0.5 frames=55 window=112.166s ui=23.10ms p95ui=50.18ms raster=1.43ms p95raster=10.84ms weather=clear
+flutter: [PERF] fps=41.1 frames=85 window=2.045s ui=20.94ms p95ui=46.37ms raster=0.46ms p95raster=0.57ms weather=clear
