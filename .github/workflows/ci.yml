@@ -1,0 +1,45 @@
+name: CI
+
+# 基线门禁：干净检出上 `flutter analyze --no-pub` 零问题、`flutter test --no-pub` 全绿。
+# 详见 docs/PROGRESS.md「干净检出基线与分析器排除」。
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  baseline:
+    name: 基线（analyze + 测试）
+    # 与本机开发用的 SDK 一致（darwin / arm64），避免 CI 与本地基线走两条平台路径。
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      # 版本对齐本机 `flutter --version`：Flutter 3.47.4 stable / Dart 3.13.3。
+      # 换 SDK 版本要同时改这里，否则 CI 验的就不是本机的基线。
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.47.4
+          cache: true
+
+      - name: 解析依赖（按 pubspec.lock 锁定，不一致即失败）
+        run: flutter pub get --enforce-lockfile
+
+      - name: flutter analyze --no-pub
+        run: flutter analyze --no-pub
+
+      - name: flutter test --no-pub
+        # 残留的 *_PROXY 会让 flutter_tester 报 WebSocket 错误，跑测试前先清掉。
+        run: |
+          env -u HTTP_PROXY -u HTTPS_PROXY -u http_proxy -u https_proxy \
+            NO_PROXY=localhost,127.0.0.1 flutter test --no-pub
