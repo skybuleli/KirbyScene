@@ -40,6 +40,9 @@
      （`build/dev_run.pid` 可能没生成），但 **`flutter run` 与 App 会存活**：
      用 `pgrep -fl flutter_tools.snapshot run` 拿 pid，或直接用
      `tool/verify_weather.mjs`（它自带 pid 兜底）。
+   * ⚠️ `dev.sh` 的「等待调试服务就绪」窗口**短于首次完整 macOS 构建**：直接
+     `dev.sh --macos` 会被判「等不到调试服务」并收尾杀掉。先单独
+     `flutter build macos --debug --no-pub` 把产物备好，再起 `dev.sh`（实测约 100s 就绪）。
    * 用户在**自己的终端**前台跑 `tool/dev.sh --macos` 也可以，
      且只有那种情况下 `tool/dev.sh stop/reload/restart` 子命令才可用。
    * 拉起后先 `nc -z 127.0.0.1 7008` 或 `node tool/inproc_eval.mjs '{"op":"ping"}'`
@@ -105,7 +108,19 @@
 要点与判据：
 
 - **判据是帧计数前进**（`state` 里的 `frame`），不是"信号发出去了"。
-- 窗口不在前台时帧循环会冻结，`open -a <path>/kirby_scene.app` 拉前台即恢复。
+- 窗口不在前台时帧循环会冻结。**但 `open -a` 不足以维持前台**（实测三条）：
+  * 必须给**绝对路径**：`open -a build/macos/.../kirby_scene.app` 直接报
+    `Unable to find application named ...`、退出码 1；`$PWD/build/...` 才可用。
+  * 即使用绝对路径（退出码 0），它也只给**瞬时**前台：实测帧 2233 → 2256 后立刻又冻住。
+  * 能稳住的是 System Events 的 `set frontmost`：
+    ```bash
+    PID=$(pgrep -f 'Debug/kirby_scene.app/Contents/MacOS/kirby_scene' | head -1)
+    osascript -e "tell application \"System Events\" to set frontmost of every process whose unix id is $PID to true"
+    ```
+    之后帧 2306 → 2350 → 2385 → 2422 → 2450 稳定推进。
+  * 跑长时间审计时用 `tool/keep_foreground.sh <pid>` 在后台循环发上面那条
+    `osascript`（三套审计与传送压力实测都靠它才能全程帧前进）。
+  * 无 GUI 会话时 `open` 与 `osascript` 都会失败，那时才需要退回下面的 Web + CDP 通道。
 - **热重载不重建已有对象**：改到 `initialize()` 里的几何/节点组装（如 `sky.build()`、
   `Scene` 里新增节点）必须热重启（SIGUSR2），单纯 SIGUSR1 看不到效果。
 - `tool/vm_reload.mjs`（VM Service 直连）不可用：增量编译由 flutter 工具持有。
