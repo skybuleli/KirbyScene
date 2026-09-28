@@ -135,6 +135,13 @@ info • Don't invoke 'print' in production code … • docs/verification/audio
 这解决了「基线数字来自脏工作区、无法在干净检出上复现」这一长期问题：
 后续 CI 门禁可以直接用这两条命令。本轮未做实机复验，也未改游戏逻辑。
 
+**这两条命令现已由 CI 强制执行**（`.github/workflows/ci.yml`，NEPT-6）：PR 与 `main` push
+都会跑 `flutter pub get --enforce-lockfile` → `flutter analyze --no-pub` → `flutter test --no-pub`，
+任一失败即整体失败，不再依赖某个人记得手动跑。工作流把 SDK 固定在 Flutter 3.47.4 stable
+（Dart 3.13.3，与本机 `flutter --version` 一致）并跑在 `macos-latest` 上——换 SDK 版本要同步改
+工作流里的 `flutter-version`，否则 CI 验的就不是本机这条基线。门禁生效已反证：故意加一个
+`avoid_print` 的 lint 错误，`analyze` 步退红；故意加一条失败断言，`test` 步退红。
+
 ## 执行队列
 
 1. **P0：版本固化** —— 干净检出已验证 analyze 零问题、195 项测试通过（见上节）；剩余记忆／进度文档改动待整理。
