@@ -14,6 +14,9 @@ analyzer:
     - build/**
     - web/**
     - macos/**
+    # docs/verification 存的是归档证据：一次性原生探针、采样日志与截图。
+    # 它们按原样保留以便复现，不能当项目源码改写，也不该参与源码 lint。
+    - docs/**
 
 linter:
   # The lint rules applied to this project can be customized in the
