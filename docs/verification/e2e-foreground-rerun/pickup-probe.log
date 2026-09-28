@@ -1,0 +1,14 @@
+✓ # 0 r=8 (8.00, 0.00) score=1 pos=(8.00,0.00,0.00) groundY=0.00 airborne=false frame=3046
+✓ # 1 r=8 (-2.74, 7.51) score=2 pos=(-2.74,0.00,7.51) groundY=0.00 airborne=false frame=3058
+✓ # 2 r=8 (-6.12, -5.15) score=3 pos=(-6.12,0.00,-5.15) groundY=0.00 airborne=false frame=3076
+✓ # 3 r=8 (6.94, -3.98) score=4 pos=(6.94,0.00,-3.98) groundY=0.00 airborne=false frame=3083
+✓ # 4 r=14 (2.38, 13.80) score=5 pos=(2.38,0.00,13.80) groundY=0.00 airborne=false frame=3089
+✓ # 5 r=14 (-13.78, -2.50) score=6 pos=(-13.78,0.00,-2.50) groundY=0.00 airborne=false frame=3113
+✓ # 6 r=14 (7.07, -12.08) score=7 pos=(7.07,0.00,-12.08) groundY=0.00 airborne=false frame=3135
+✓ # 7 r=14 (8.93, 10.78) score=8 pos=(8.93,0.00,10.78) groundY=0.00 airborne=false frame=3159
+✓ # 8 r=19.5 (-18.37, 6.53) score=9 pos=(-18.37,-0.05,6.53) groundY=-0.05 airborne=false frame=3178
+✓ # 9 r=19.5 (0.16, -19.50) score=10 pos=(0.16,-0.15,-19.50) groundY=-0.15 airborne=false frame=3200
+✓ #10 r=19.5 (18.26, 6.84) score=11 pos=(18.26,-0.12,6.84) groundY=-0.12 airborne=false frame=3222
+✓ #11 r=19.5 (-12.69, 14.81) score=12 pos=(-12.69,-0.07,14.81) groundY=-0.07 airborne=false frame=3241
+
+最终 score=12/12 cleared=true
